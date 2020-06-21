@@ -2,22 +2,34 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159220391-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-159220391-5');
-    </script>
+    <script async src="https://track.everyone.wtf/tracker.js" data-ackee-server="https://track.everyone.wtf" data-ackee-domain-id="9fe25924-f166-45bc-8b68-19220a545141"></script>
 
     <title>What the fuck?</title>
+
+    <style>
+        .legal {
+          color: white;
+          position: absolute;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          bottom: 0;
+          right: 0;
+        }
+    
+        .legal>a {
+          color: blue;
+        }
+      </style>
 </head>
 
 <body>
     <video autoplay loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
         <source src="./obama.mp4" type="video/mp4">
     </video>
+
+    <small class="legal">
+    For legal reasons I must also link <a href="https://inform.everyone.wtf/" target="_blank">my Privacy Policy and Imprint</a>.
+    </small>
 </body>
 
 </html>
