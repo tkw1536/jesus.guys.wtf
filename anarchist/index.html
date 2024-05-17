@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<title>Anarchist vibes</title>
+<script async src="https://inform.everyone.wtf/legal.min.js" data-site-id="9fe25924-f166-45bc-8b68-19220a545141"></script>
+<style>
+    textarea {
+        width: 100%;
+    }
+</style>
+
+<textarea rows="10">Replace any non-ascii characters like &auml;&ouml;&uuml; with the unicode replacement character</textarea>
+<textarea readonly rows="10"></textarea>
+
+<script>
+    const uls = document.querySelectorAll('textarea');
+    const input = uls[0];
+    const output = uls[1];
+    const onChange = (evt) => {
+        output.value = [...input.value].map(c => c.charCodeAt(0) < 128 ? c : '�').join('');
+    }
+    input.addEventListener('keyup', onChange);
+    onChange();
+</script>
